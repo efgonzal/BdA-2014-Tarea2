@@ -3,42 +3,28 @@
     <title></title>
     <relations/>
     <mapcanvas>
-        <units>meters</units>
+        <units>degrees</units>
         <extent>
-            <xmin>257718.37062225089175627</xmin>
-            <ymin>6341895.83267510309815407</ymin>
-            <xmax>257938.90757337183458731</xmax>
-            <ymax>6342031.40084419026970863</ymax>
+            <xmin>-71.59729266968426487</xmin>
+            <ymin>-33.03550583540615548</ymin>
+            <xmax>-71.59174517653352154</xmax>
+            <ymax>-33.03256731180650263</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
             <spatialrefsys>
-                <proj4>+proj=utm +zone=19 +south +datum=WGS84 +units=m +no_defs</proj4>
-                <srsid>3169</srsid>
-                <srid>32719</srid>
-                <authid>EPSG:32719</authid>
-                <description>WGS 84 / UTM zone 19S</description>
-                <projectionacronym>utm</projectionacronym>
+                <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                <srsid>3452</srsid>
+                <srid>4326</srid>
+                <authid>EPSG:4326</authid>
+                <description>WGS 84</description>
+                <projectionacronym>longlat</projectionacronym>
                 <ellipsoidacronym>WGS84</ellipsoidacronym>
-                <geographicflag>false</geographicflag>
+                <geographicflag>true</geographicflag>
             </spatialrefsys>
         </destinationsrs>
         <layer_coordinate_transform_info>
-            <layer_coordinate_transform destAuthId="EPSG:32719" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Estacionamientos20140701163130877"/>
-            <layer_coordinate_transform destAuthId="EPSG:32719" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="EdificioC20140619133125690"/>
-            <layer_coordinate_transform destAuthId="EPSG:32719" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Edificios_shp20140625184333205"/>
-            <layer_coordinate_transform destAuthId="EPSG:32719" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="EdificioA20140619124128391"/>
-            <layer_coordinate_transform destAuthId="EPSG:32719" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="EdificioD20140619130231721"/>
-            <layer_coordinate_transform destAuthId="EPSG:32719" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="EdificioU20140619131128539"/>
-            <layer_coordinate_transform destAuthId="EPSG:32719" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="EdificioT20140619134718087"/>
-            <layer_coordinate_transform destAuthId="EPSG:32719" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Calle120140619134947990"/>
-            <layer_coordinate_transform destAuthId="EPSG:32719" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Base20140619113834659"/>
-            <layer_coordinate_transform destAuthId="EPSG:32719" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="EdificioP20140619131035628"/>
-            <layer_coordinate_transform destAuthId="EPSG:32719" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="EdificioB20140619131437641"/>
-            <layer_coordinate_transform destAuthId="EPSG:32719" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="EdificioF20140619124449185"/>
-            <layer_coordinate_transform destAuthId="EPSG:32719" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="EdificioD20140619130402149"/>
-            <layer_coordinate_transform destAuthId="EPSG:32719" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="AreasEstacionamientos20140701162459432"/>
-            <layer_coordinate_transform destAuthId="EPSG:32719" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="EdificioE20140619124653771"/>
+            <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:32719" srcDatumTransform="-1" destDatumTransform="-1" layerid="cl_05provincias_utm1920140619113130599"/>
         </layer_coordinate_transform_info>
     </mapcanvas>
     <legend updateDrawingOrder="true" activeLayer="Estacionamientos20140701163130877">
@@ -168,7 +154,7 @@
                 </spatialrefsys>
             </srs>
             <provider encoding="System">ogr</provider>
-            <previewExpression></previewExpression>
+            <previewExpression>COALESCE( "id", '&lt;NULL>' )</previewExpression>
             <vectorjoins/>
             <renderer-v2 symbollevels="0" type="singleSymbol">
                 <symbols>
