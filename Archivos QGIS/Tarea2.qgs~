@@ -5,10 +5,10 @@
     <mapcanvas>
         <units>meters</units>
         <extent>
-            <xmin>257718.37062225089175627</xmin>
-            <ymin>6341895.83267510309815407</ymin>
-            <xmax>257938.90757337183458731</xmax>
-            <ymax>6342031.40084419026970863</ymax>
+            <xmin>257509.86611285520484671</xmin>
+            <ymin>6341884.32672796677798033</ymin>
+            <xmax>257956.66507595736766234</xmax>
+            <ymax>6342158.98236762266606092</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -41,7 +41,7 @@
             <layer_coordinate_transform destAuthId="EPSG:32719" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="EdificioE20140619124653771"/>
         </layer_coordinate_transform_info>
     </mapcanvas>
-    <legend updateDrawingOrder="true" activeLayer="Estacionamientos20140701163130877">
+    <legend updateDrawingOrder="true" activeLayer="cl_05provincias_utm1920140619113130599">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Estacionamientos" showFeatureCount="0">
             <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Estacionamientos20140701163130877" visible="1"/>
