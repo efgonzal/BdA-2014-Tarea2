@@ -28,7 +28,7 @@
             <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:32719" srcDatumTransform="-1" destDatumTransform="-1" layerid="cl_05provincias_utm1920140619113130599"/>
         </layer_coordinate_transform_info>
     </mapcanvas>
-    <legend updateDrawingOrder="true" activeLayer="Estacionamientos20140701163130877">
+    <legend updateDrawingOrder="true" activeLayer="Provincia20140714191051177">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Estacionamientos" showFeatureCount="0">
             <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Estacionamientos20140701163130877" visible="1"/>
