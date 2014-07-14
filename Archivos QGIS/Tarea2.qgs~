@@ -5,10 +5,10 @@
     <mapcanvas>
         <units>degrees</units>
         <extent>
-            <xmin>-71.59729266968426487</xmin>
-            <ymin>-33.03550583540615548</ymin>
-            <xmax>-71.59174517653352154</xmax>
-            <ymax>-33.03256731180650263</ymax>
+            <xmin>-71.59551555066629192</xmin>
+            <ymin>-33.03463695165294212</ymin>
+            <xmax>-71.59274180409089183</xmax>
+            <ymax>-33.03293187800053943</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -24,6 +24,7 @@
             </spatialrefsys>
         </destinationsrs>
         <layer_coordinate_transform_info>
+            <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:32719" srcDatumTransform="-1" destDatumTransform="-1" layerid="test20140714190911961"/>
             <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:32719" srcDatumTransform="-1" destDatumTransform="-1" layerid="cl_05provincias_utm1920140619113130599"/>
         </layer_coordinate_transform_info>
     </mapcanvas>
@@ -48,9 +49,9 @@
                 <legendlayerfile isInOverview="0" layerid="Base20140619113834659" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="cl_05provincias_utm19" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Provincia" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="cl_05provincias_utm1920140619113130599" visible="1"/>
+                <legendlayerfile isInOverview="0" layerid="Provincia20140714191051177" visible="1"/>
             </filegroup>
         </legendlayer>
     </legend>
@@ -374,27 +375,27 @@
             <attributeactions/>
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-            <id>cl_05provincias_utm1920140619113130599</id>
-            <datasource>../Capas Dadas/cl_05provincias_utm19.shp</datasource>
+            <id>Provincia20140714191051177</id>
+            <datasource>../Capas Dadas/Provincia.shp</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
                 <value></value>
             </keywordList>
-            <layername>cl_05provincias_utm19</layername>
+            <layername>Provincia</layername>
             <srs>
                 <spatialrefsys>
-                    <proj4>+proj=utm +zone=19 +south +datum=WGS84 +units=m +no_defs</proj4>
-                    <srsid>3169</srsid>
-                    <srid>32719</srid>
-                    <authid>EPSG:32719</authid>
-                    <description>WGS 84 / UTM zone 19S</description>
-                    <projectionacronym>utm</projectionacronym>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
                     <ellipsoidacronym>WGS84</ellipsoidacronym>
-                    <geographicflag>false</geographicflag>
+                    <geographicflag>true</geographicflag>
                 </spatialrefsys>
             </srs>
-            <provider encoding="System">ogr</provider>
+            <provider encoding="UTF-8">ogr</provider>
             <previewExpression></previewExpression>
             <vectorjoins/>
             <renderer-v2 symbollevels="0" type="singleSymbol">
@@ -402,7 +403,7 @@
                     <symbol alpha="1" type="fill" name="0">
                         <layer pass="0" class="SimpleFill" locked="0">
                             <prop k="border_width_unit" v="MM"/>
-                            <prop k="color" v="147,201,177,255"/>
+                            <prop k="color" v="208,28,121,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
@@ -441,10 +442,10 @@
                 <multilineenabled fieldname="" on=""/>
                 <selectedonly on=""/>
             </labelattributes>
-            <editform>.</editform>
+            <editform></editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
-            <annotationform>.</annotationform>
+            <annotationform></annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
