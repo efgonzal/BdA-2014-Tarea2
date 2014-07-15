@@ -1,0 +1,49 @@
+<html>
+
+<head>
+
+<script type="text/javascript" src="http://openlayers.org/api/OpenLayers.js"></script>
+
+<script type="text/javascript">
+
+var map;
+
+function init() {
+	//Opciones del mapa
+	var limites = new OpenLayers.Bounds(-71.8425687780256, -33.9544980306097,-69.9769349572885, -32.0205669052588);
+	var opciones = {
+					maxExtent: limites,
+					maxResolution: 0.007554418458402,
+					projection: "EPSG:4326",
+					units: 'degrees'
+	                };
+	map = new OpenLayers.Map('map',opciones);
+	map.addControl(new OpenLayers.Control.MousePosition({
+						prefix: 'Coordenadas: ',
+						separator: ' | ',
+						numDigits: 7,
+						emptyString: ''
+						})
+					);
+	//Capas
+	var provincia = new OpenLayers.Layer.WMS("OpenLayers WMS2","http://localhost:8080/geoserver/BDA2/wms",{layers: 'BDA2:Provincia'});
+	var base = new OpenLayers.Layer.WMS("OpenLayers WMS2","http://localhost:8080/geoserver/BDA2/wms",{layers: 'BDA2:Base',transparent: "true"});
+	var edificios = new OpenLayers.Layer.WMS("OpenLayers WMS2","http://localhost:8080/geoserver/BDA2/wms",{layers: 'BDA2:Edificios',transparent: "true"});
+	var calle = new OpenLayers.Layer.WMS("OpenLayers WMS2","http://localhost:8080/geoserver/BDA2/wms",{layers: 'BDA2:Calle',transparent: "true"});
+	var estacionamientos = new OpenLayers.Layer.WMS("OpenLayers WMS2","http://localhost:8080/geoserver/BDA2/wms",{layers: 'BDA2:Estacionamientos',transparent: "true"});
+	map.addLayers([provincia,base,edificios,calle,estacionamientos]);
+	map.zoomToMaxExtent();
+
+}
+
+</script>
+
+</head>
+
+
+
+<body onload="init()">
+	<center>
+		<div id="map" style="width: 800px; height: 600px"></div>
+	</center>
+</body>

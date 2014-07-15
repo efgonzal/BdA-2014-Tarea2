@@ -5,10 +5,10 @@
     <mapcanvas>
         <units>degrees</units>
         <extent>
-            <xmin>-71.59551555066629192</xmin>
-            <ymin>-33.03463695165294212</ymin>
-            <xmax>-71.59274180409089183</xmax>
-            <ymax>-33.03293187800053943</ymax>
+            <xmin>-71.60722292257558763</xmin>
+            <ymin>-33.04115705723935292</ymin>
+            <xmax>-71.5850329499721596</xmax>
+            <ymax>-33.02751646801993246</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -28,7 +28,7 @@
             <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:32719" srcDatumTransform="-1" destDatumTransform="-1" layerid="cl_05provincias_utm1920140619113130599"/>
         </layer_coordinate_transform_info>
     </mapcanvas>
-    <legend updateDrawingOrder="true" activeLayer="Provincia20140714191051177">
+    <legend updateDrawingOrder="true" activeLayer="Base20140619113834659">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Estacionamientos" showFeatureCount="0">
             <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="Estacionamientos20140701163130877" visible="1"/>
@@ -442,10 +442,10 @@
                 <multilineenabled fieldname="" on=""/>
                 <selectedonly on=""/>
             </labelattributes>
-            <editform></editform>
+            <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
-            <annotationform></annotationform>
+            <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
