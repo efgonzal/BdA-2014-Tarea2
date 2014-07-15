@@ -4,6 +4,7 @@ class DBManager{
 	var $resultado;
 	//Conecta con la base de datos
 	function conectar(){
+		//Variables de conexión
 		$host = 'localhost';
 		$puerto = 5432;
 		$nombredb = 'postgis_21_sample';

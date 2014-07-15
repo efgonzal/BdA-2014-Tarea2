@@ -20,11 +20,11 @@ function init() {
 						});
 	map.addControl(mouse);
 	//Capas
-	var provincia = new OpenLayers.Layer.WMS("OpenLayers WMS2","http://201.214.125.154:8080/geoserver/BDA2/wms",{layers: 'BDA2:provincia'});
-	var base = new OpenLayers.Layer.WMS("OpenLayers WMS2","http://201.214.125.154:8080/geoserver/BDA2/wms",{layers: 'BDA2:base',transparent: "true"});
-	var edificios = new OpenLayers.Layer.WMS("OpenLayers WMS2","http://201.214.125.154:8080/geoserver/BDA2/wms",{layers: 'BDA2:edificios',transparent: "true"});
-	var calle = new OpenLayers.Layer.WMS("OpenLayers WMS2","http://201.214.125.154:8080/geoserver/BDA2/wms",{layers: 'BDA2:calle',transparent: "true"});
-	var estacionamientos = new OpenLayers.Layer.WMS("OpenLayers WMS2","http://201.214.125.154:8080/geoserver/BDA2/wms",{layers: 'BDA2:estacionamientos',transparent: "true"});
+	var provincia = new OpenLayers.Layer.WMS("Provincia","http://localhost:8080/geoserver/BDA2/wms",{layers: 'BDA2:provincia'});
+	var base = new OpenLayers.Layer.WMS("Base","http://localhost:8080/geoserver/BDA2/wms",{layers: 'BDA2:base',transparent: "true"});
+	var edificios = new OpenLayers.Layer.WMS("Edificios","http://localhost:8080/geoserver/BDA2/wms",{layers: 'BDA2:edificios',transparent: "true"});
+	var calle = new OpenLayers.Layer.WMS("Calles","http://localhost:8080/geoserver/BDA2/wms",{layers: 'BDA2:calle',transparent: "true"});
+	var estacionamientos = new OpenLayers.Layer.WMS("Estacionamientos","http://localhost:8080/geoserver/BDA2/wms",{layers: 'BDA2:estacionamientos',transparent: "true"});
 	map.addLayers([provincia,base,edificios,calle,estacionamientos]);
 	markers = new OpenLayers.Layer.Markers( "Markers" );
 	map.addLayer(markers);
